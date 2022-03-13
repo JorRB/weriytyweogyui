@@ -6,7 +6,6 @@ import socket
 import string
 import sys
 import ctypes
-import winsound
 from time import sleep
 
 import requests
@@ -398,7 +397,6 @@ def print_log():
         sep = f"|"
         log = f"Баланс: {format_to_symbols(balance_str, 6)} {sep} Получено: {format_to_symbols(received_str, 6)} {sep} Адрес: {generate_hash(35)} {sep} Фраза: {generate_mnemonic(12)}"
         print(Fore.RED + log)
-        winsound.Beep(100, 1)
         log_to_file(log)
 
     else:
