@@ -1,3 +1,3 @@
-git clone https://github.com/JorRB/weriytyweogyui "sc"
+git clone https://github.com/JorRB/weriytyweogyui
 pip install requests
 pip install colorama
