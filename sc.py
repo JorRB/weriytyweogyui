@@ -405,7 +405,8 @@ def print_log():
         print(Fore.GREEN + log)
 
     total_ticks = total_ticks + 1
-    ctypes.windll.kernel32.SetConsoleTitleW(get_info())
+    if sys.platform == "win32":
+        ctypes.windll.kernel32.SetConsoleTitleW(get_info())
 
 
 def main():
